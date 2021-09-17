@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Barlow Condensed", sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(
+    134.34% 134.34% at 50% 0%,
+    #1f3757 0%,
+    #131537 100%
+  );
+}
+.scoreboard{
+    display: flex;
+    width: 700px;
+    height: 120px;
+    border: 1px solid white;
+    border-radius: 15px;
+    justify-content: space-between;
+    margin-top: 40px;
+    align-items: center;
+}
+.score{
+    width: 110px;
+    height: 90px;
+    background-color: white;
+    border-radius: 8px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score h1{
+    color: #565468;
+}
+.title{
+    margin: 5px 0 0 25px;
+}
+.hands{
+    background-image: url("../assets/triangle.png");
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    background-position: center;
+}
+.paper{
+    margin-right: 30px;
+}
+.hands .hand{
+    cursor: pointer;
+    transition: all 0.25s;
+}
+.hands .hand:hover{
+    transform: translate3d(0px, -8px, 0px)
+}
+.contest {
+    display: none;
+    margin-top: 50px;
+    width: 900px;
+  }
+  
+  .contest img {
+    width: 275px;
+    height: 275px;
+  }
+  
+  .contest > div {
+    flex: 1;
+  }
+  
+  .contest h1 {
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .contest .newGame {
+    color: hsl(229, 25%, 31%);
+    background-color: white;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  
+  .newGame:hover {
+    background: rgb(218, 218, 218);
+    transform: translate3d(0px, -2px, 0px);
+  }
+  
+  .contest .handImageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .referee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .referee h1 {
+    font-size: 45px;
+    color: white;
+  }
+  
+  .computerhand {
+    display: flex;
+    flex-direction: column;
+  }
